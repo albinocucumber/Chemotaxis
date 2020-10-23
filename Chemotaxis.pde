@@ -5,8 +5,8 @@ class Bacteria{
   int myColor;
   int mySize;
   Bacteria(){
-    myX = (int)(Math.random() * 400);
-    myY = (int)(Math.random() * 400);
+    myX = (int)(Math.random() * 1000);
+    myY = (int)(Math.random() * 1000);
     mySize = (int)(Math.random() * 21 + 5);
     mySpeed  = 20.0/mySize;
     myColor = color((int)(Math.random()* 255),(int)(Math.random()* 255), (int)(Math.random()* 255));
@@ -44,7 +44,7 @@ class Bacteria{
 
 Bacteria [] steve = new Bacteria[50];
 void setup(){     
-   size(400, 400);
+   size(1000, 1000);
    background(255);
    for(int i = 0; i < steve.length; i++){
      steve[i] = new Bacteria();
