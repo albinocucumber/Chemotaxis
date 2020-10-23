@@ -12,8 +12,8 @@ class Bacteria{
     myColor = color((int)(Math.random()* 255),(int)(Math.random()* 255), (int)(Math.random()* 255));
   }
   void wiggle(){
-    myX = myX + (int)(Math.random() * 5 - 2);
-    myY = myY + (int)(Math.random() * 5 - 2);
+    myX = myX + (int)(Math.random() * 10 - 5);
+    myY = myY + (int)(Math.random() * 10 - 5);
   }
   void move(){
     if(myX > mouseX){
